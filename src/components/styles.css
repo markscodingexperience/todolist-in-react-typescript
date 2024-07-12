@@ -1,0 +1,97 @@
+.form {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+}
+
+.inputBox {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+.inputBox:focus {
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.inputButton {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    font-size: 15px;
+    background-color: #2f742f;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+}
+
+.inputButton:hover {
+    background: #388ae2;
+}
+
+.inputButton:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.todoCards { 
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background: #2f742f;
+    position: relative;
+}
+
+.card{
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.icons {
+    position: relative;
+    width: 296px;
+    display: ruby-text;
+}
+
+.todoCards:focus {
+    outline: none;
+}
+
+@media (max-width: 700px) {
+    .inputBox {
+        width: 95%;
+    }
+    .todos {
+        width: 95%;
+    }
+    .todoCards {
+        width: 100%;
+    }
+}
